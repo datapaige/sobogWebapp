@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 
@@ -8,7 +8,7 @@ import Cooperative from "./Screens/Cooperative";
 import Transport from "./Screens/Transport";
 import Contact from "./Screens/Contact";
 import JoinReg from "./JoinSobog/JoinReg";
-import Staffs from "./Screens/staffs";
+import Staffs from "./Screens/Staffs";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
