@@ -1,0 +1,132 @@
+/* Staffs.css */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.team-page {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  color: #1e1e1e;
+  transition: background-color 0.4s, color 0.4s;
+  min-height: 100vh;
+}
+
+.team-page.dark {
+  background-color: #1a202c;
+  color: #f0f0f0;
+}
+
+.toggle-btn {
+  background: none;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.toggle-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.team-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s;
+  padding-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeCard 1s ease forwards;
+}
+
+@keyframes fadeCard {
+  to {
+    opacity: 1;
+  }
+}
+
+.team-page.dark .team-card {
+  background-color: #2d3748;
+  color: #f0f0f0;
+}
+
+.team-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.role {
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: inherit;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3b82f6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .team-page h1 {
+    font-size: 2rem;
+  }
+
+  .team-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+}

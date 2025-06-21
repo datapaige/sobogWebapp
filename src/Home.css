@@ -1,0 +1,147 @@
+/* Home.css */
+
+.homepage {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #003333, #005555);
+  color: white;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #f9a825;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f57f17;
+}
+
+.hero-image {
+  flex: 1;
+  min-height: 200px;
+  background-image: url("https://via.placeholder.com/400x250");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.sectors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.sector-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-4px);
+}
+
+.sector-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.sector-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.sector-card a {
+  text-decoration: none;
+  color: #005555;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.about {
+  background-color: #eaf7f6;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: #003333;
+  color: white;
+  border-radius: 10px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.cta-button.secondary {
+  background-color: #eeeeee;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.cta-button.secondary:hover {
+  background-color: #dddddd;
+}

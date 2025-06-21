@@ -1,0 +1,134 @@
+/* Transportation.css */
+
+.transport-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f6fefe;
+}
+
+.hero-transport {
+  background-color: #002a2a;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('/assets/transport-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-transport h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-transport p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.transport-highlights {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.transport-highlights h2 {
+  margin-bottom: 30px;
+}
+
+.transport-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background-color: #f0f0f0;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex: 1 1 250px;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.booking-process {
+  background-color: #e7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.booking-process h2 {
+  margin-bottom: 20px;
+}
+
+.booking-process ol {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+.booking-process li {
+  margin-bottom: 15px;
+}
+
+.transport-cta {
+  background-color: #004040;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.transport-cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #f49e00;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d88b00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .transport-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .hero-transport h1 {
+    font-size: 2rem;
+  }
+
+  .hero-transport p {
+    padding: 0 10px;
+  }
+}

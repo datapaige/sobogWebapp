@@ -1,0 +1,134 @@
+/* Cooperative.css */
+
+.cooperative-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f7fdfa;
+}
+
+.hero-coop {
+  background: #004d4d;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('/assets/coop-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-coop h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-coop p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why-join {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.why-join h2 {
+  margin-bottom: 40px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.benefit {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #f2f2f2;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.benefit h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.benefit p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.how-it-works {
+  background-color: #e9fdf5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  margin-bottom: 20px;
+}
+
+.how-it-works ol {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.how-it-works li {
+  margin-bottom: 15px;
+}
+
+.coop-cta {
+  background-color: #004040;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.coop-cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #f49e00;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d88b00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit {
+    width: 90%;
+  }
+
+  .hero-coop h1 {
+    font-size: 2rem;
+  }
+
+  .hero-coop p {
+    padding: 0 10px;
+  }
+}

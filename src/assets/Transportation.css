@@ -1,0 +1,84 @@
+/* Transportation.css */
+
+.transport-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.transport-hero {
+  text-align: center;
+  background-color: #e0f2f1;
+  padding: 2.5rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.transport-hero h1 {
+  font-size: 2rem;
+  color: #004d40;
+  margin-bottom: 0.8rem;
+}
+
+.transport-hero p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.transport-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #00695c;
+  margin-bottom: 0.8rem;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.transport-cta {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-radius: 10px;
+}
+
+.transport-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.transport-cta p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #f9a825;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #f57f17;
+}
